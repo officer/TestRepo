@@ -5,4 +5,6 @@ files:
     destination: /home/ec2-user/
 hooks:
   AfterInstall:
-	  - location: Scripts/AfterInstall.sh
+    - location: Scripts/AfterInstall.sh
+      timeout: 300
+      runas: ec2-user

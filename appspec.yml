@@ -4,7 +4,5 @@ files:
   - source: /hello.sh
     destination: /home/ec2-user/
 hooks:
-  BeforeInstall:
-	  - location: Scripts/BeforeInstall.sh
   AfterInstall:
 	  - location: Scripts/AfterInstall.sh
